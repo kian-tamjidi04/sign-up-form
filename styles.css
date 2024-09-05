@@ -58,3 +58,8 @@ img[src="odin-logo.png"] {
     background-color: rgb(246, 110, 72);
     color: white;
 }
+
+.data-input {
+    display: flex;
+    justify-content: space-evenly;
+}
