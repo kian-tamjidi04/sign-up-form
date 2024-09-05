@@ -1,3 +1,7 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     display: flex;
 }
@@ -7,12 +11,9 @@ body {
     src: url(alt-font.ttf);
 }
 
-img[src="lambo.jpg"] {
+img[src="jag.jpg"] {
     width: 100%;
-    height: 100%;
-    min-width: 400px;
-    max-width: 650px;
-    min-height: 1000px;
+    max-height: 100vh;
 }
 
 .title-group-left {
@@ -46,4 +47,14 @@ img[src="odin-logo.png"] {
 
 .right-side {
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.create-button {
+    border-radius: 4px;
+    padding: 10px 50px;
+    background-color: rgb(246, 110, 72);
+    color: white;
 }
