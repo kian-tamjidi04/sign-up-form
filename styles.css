@@ -10,6 +10,9 @@ body {
 img[src="lambo.jpg"] {
     width: 40vw;
     height: 100vh;
+    min-width: 400px;
+    max-width: 650px;
+    min-height: 1000px;
 }
 
 .title-group-left {
@@ -18,16 +21,28 @@ img[src="lambo.jpg"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
+    position: absolute;
+    top: 33.33%;
+    transform: translateY(-50%);
 }
 
 .odin-title {
-    font-size: 100px;
-    color: pink;
+    font-size: 75px;
+    color: rgb(244, 231, 231);
     font-family: coolText;
 }
 
 img[src="odin-logo.png"] {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.left-side {
+    position: relative;
+}
+
+.title-group-left {
+    /* left: 0; Adjust as needed to position horizontally */
+     /* Centers the div vertically at the 1/3 position */
 }
