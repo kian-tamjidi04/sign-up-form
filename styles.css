@@ -2,7 +2,32 @@ body {
     display: flex;
 }
 
+@font-face {
+    font-family: coolText;
+    src: url(alt-font.ttf);
+}
+
 img[src="lambo.jpg"] {
     width: 40vw;
     height: 100vh;
+}
+
+.title-group-left {
+    background-color: black;
+    opacity: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.odin-title {
+    font-size: 100px;
+    color: pink;
+    font-family: coolText;
+}
+
+img[src="odin-logo.png"] {
+    width: 100px;
+    height: 100px;
 }
