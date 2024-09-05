@@ -1,0 +1,8 @@
+body {
+    display: flex;
+}
+
+img[src="lambo.jpg"] {
+    width: 40vw;
+    height: 100vh;
+}
