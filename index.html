@@ -22,7 +22,7 @@
                 <br><br>
                 You <em>know</em> you want to.
             </div>
-            <form class="user-info-form">
+            <form class="user-info-form" onsubmit="return checkPasswords()">
                 <fieldset class="data">
                     <h2>Let's do this!</h2>
                     <div class="inputs">
@@ -43,7 +43,7 @@
                             </div>
                             <div class="box2">
                                 <label for="phone">PHONE NUMBER</label>
-                                <input type="text" name="phone" id="phone" required>
+                                <input type="number" name="phone" id="phone" required>
                             </div>
                         </div>
                         <div class="third-row data-input">
@@ -62,5 +62,23 @@
                 <div class="existing-user">Already have an account? <a href="example.html">Log in</a></p>
             </form>
         </div>
+        <script>
+            function checkPasswords() {
+                let p1 = document.querySelector("#password");
+                let p2 = document.querySelector("#confirm-password");
+
+                let pass1 = p1.value;
+                let pass2 = p2.value;
+
+                if (pass1 != pass2) {
+                    alert("Passwords do not match, try again");
+                    p1.style = "border-color: red;";
+                    p2.style = "border-color: red;";
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
     </body>
 </html>
