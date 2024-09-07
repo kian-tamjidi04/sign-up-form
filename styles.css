@@ -98,3 +98,15 @@ a[href="example.html"] {
     flex-direction: column;
     gap: 10px;
 }
+
+.credits {
+    top: 80%;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+a[href="https://unsplash.com/@21w8y"], 
+a[href="https://unsplash.com/photos/red-coupe-during-daytime-1Ah8CAwk3vM"] {
+    color: inherit;
+}
