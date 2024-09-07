@@ -1,9 +1,8 @@
-html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
     display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @font-face {
@@ -41,8 +40,10 @@ img[src="odin-logo.png"] {
 }
 
 .left-side {
-    position: relative;
+    background-image: url("jag.jpg");
+    background-size: cover;
     width: 40vw;
+    height: 100vh;
 }
 
 .right-side {
@@ -57,9 +58,20 @@ img[src="odin-logo.png"] {
     padding: 10px 50px;
     background-color: rgb(246, 110, 72);
     color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px none black;
 }
 
 .data-input {
     display: flex;
-    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.user-info-form {
+    margin: 10px;
+}
+
+.create-button:active {
+    opacity: 50%;
 }
