@@ -44,8 +44,9 @@ img[src="odin-logo.png"] {
 .right-side {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     min-width: 700px;
+    gap: 150px;
 }
 
 .create-button {
@@ -55,12 +56,14 @@ img[src="odin-logo.png"] {
     color: white;
     margin-top: 20px;
     margin-left: 20px;
-    border: 2px none black;
+    box-shadow: 0px 3px rgb(167, 167, 167);
+    border: hidden;
 }
 
 .data-input {
     display: flex;
     gap: 100px;
+    font-size: 13px;
 }
 
 .create-button:active {
@@ -69,6 +72,7 @@ img[src="odin-logo.png"] {
 
 .existing-user {
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 a[href="example.html"] {
