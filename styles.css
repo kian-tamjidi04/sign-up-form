@@ -17,10 +17,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    position: absolute;
+    position: relative;
     top: 33.33%;
-    transform: translateY(-50%);
-    padding-right: 50%;
+    width: 100%;
 }
 
 .odin-title {
