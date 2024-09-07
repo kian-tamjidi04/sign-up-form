@@ -10,11 +10,6 @@ body {
     src: url(alt-font.ttf);
 }
 
-img[src="jag.jpg"] {
-    width: 100%;
-    max-height: 100vh;
-}
-
 .title-group-left {
     background-color: black;
     opacity: 50%;
@@ -44,13 +39,14 @@ img[src="odin-logo.png"] {
     background-size: cover;
     width: 40vw;
     height: 100vh;
+    min-width: 300px;
 }
 
 .right-side {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    min-width: 700px;
 }
 
 .create-button {
@@ -74,4 +70,14 @@ img[src="odin-logo.png"] {
 
 .create-button:active {
     opacity: 50%;
+}
+
+.existing-user {
+    margin-left: 20px;
+}
+
+a[href="example.html"] {
+    text-decoration: none;
+    color: rgb(246, 110, 72);
+    font-weight: bold;
 }
